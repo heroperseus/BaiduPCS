@@ -12,7 +12,7 @@ RUN	set -x && \
 	mv BaiduPCS-Go-${BAIDUPCS_VERSION}-linux-amd64 BaiduPCS && \
 	mkdir -p /opt/BaiduPCS && \
 	cp -f BaiduPCS/* /opt/BaiduPCS/ && \
-	rm -rf BaiduPCS* && \
+	rm -rf BaiduPCS*
 	#apk del wget unzip
 
 VOLUME ["/download"]
